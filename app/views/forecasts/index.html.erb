@@ -1,0 +1,15 @@
+<h1>Forecast for today:</h1>
+
+<h2><%= @forecast["date"] %></h2>
+<h2><%= @forecast["temp"] %></h2>
+<h2><%= @forecast["text"] %></h2>
+
+<h1>5 Day Forecast</h1>
+<% @forecasts.each do |forecast| %>
+  <h2><%= forecast["date"] %></h2>
+  <h2><%= forecast["day"] %></h2>
+  <h2><%= forecast["high"] %></h2>
+  <h2><%= forecast["low"] %></h2>
+  <h2><%= forecast["text"] %></h2>
+  <br>
+<% end %>
